@@ -1,0 +1,9 @@
+mysql:
+  image: mysql:latest
+  ports:
+    - "3306:3306"
+  hostname: dbserver
+  environment:
+    MYSQL_ROOT_PASSWORD: password
+  volumes:
+    - /tmp/mysql:/var/lib/mysql
